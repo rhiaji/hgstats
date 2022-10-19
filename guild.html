@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guild Data</title>
+
+
+    <link rel="stylesheet" href="src/style.css">    
+    <script src="src/index.js"></script>
+    <script src="src/collection.js"></script>
+
+</head>
+<body>
+
+    <div class="nav-head">
+        <p style="font-weight:bold;">Hive Games Statistics</p>
+        <button type="submit" class="option-button" onclick="logout()"> Log Out</button>
+    </div>
+
+    <div class="container-options">
+        <button class="option-button" onclick="splinterlands()">
+            SPLINTERLANDS
+        </button>
+
+        <button class="option-button" onclick="risingstar()">
+            RISINGSTAR
+        </button>
+    </div>
+
+    <div class="container-panel-bg-guild">
+
+    </div>
+
+    <div class="container-panel">
+        <div style="display: flex;">
+            <table style="width: 100%; height: 50px;">
+                <thead>
+                    <tr>
+                        <td>Guild Name:</td>
+                        <td id="guild_name" style="color: rgb(255, 176, 7);">N/A</td>
+                        <td>Level:</td>
+                        <td id="guild_level" style="color: rgb(255, 176, 7);">N/A</td>
+                        <td>Crowns:</td>
+                        <td id="guild_crowns" style="color: rgb(255, 176, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>MEMBERS</td>
+                        <td>RATINGS</td>
+                    </tr>
+                </thead>
+            </table>    
+        </div>
+        <div class="table-container">
+            <table class="guild-table">
+                <tbody  id="members">
+                </tbody>
+            </table>     
+        </div>
+    </div>
+    
+</body>
+</html>

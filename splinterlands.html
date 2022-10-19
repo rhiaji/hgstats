@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splinterlands Data</title>
+
+
+    <link rel="stylesheet" href="src/style.css">    
+    <script src="src/index.js"></script>
+    <script src="src/collection.js"></script>
+
+</head>
+<body>
+
+    <div class="nav-head">
+        <p style="font-weight:bold;">Hive Games Statistics</p>
+        <button type="submit" class="option-button" onclick="logout()"> Log Out</button>
+    </div>
+
+    <div class="container-options">
+        <button class="option-button" onclick="splinterlands()">
+            SPLINTERLANDS
+        </button>
+
+        <button class="option-button" onclick="risingstar()">
+            RISINGSTAR
+        </button>
+    </div>
+
+    <div class="container-panel-bg">
+
+    </div>
+
+    <div class="container-panel">
+        <div id="splinterlands_stats" class="statscontent">
+
+            <div style="display: flex;">
+                <table>
+                    <tr>
+                        <td>Player Name:</td>
+                        <td id="name" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Collection Power:</td>
+                        <td id="collection_power" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Guild:</td>
+                        <td id="guild" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>League:<br><select id="option_league" style="background: transparent; height: 30px" onchange="optionleague()">
+                            <option style="color: black;">wild</option>
+                            <option style="color: black;">modern</option>
+                          </select></td>
+                        <td id="league" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"> <button onclick="guildcheck()">Check Guild</button> </td>                 
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td> Rating:<br><select id="option_rating" style="background: transparent; height: 30px" onchange="optionrating()">
+                            <option style="color: black;">wild</option>
+                            <option style="color: black;">modern</option>
+                          </select></td>
+                        <td id="rating" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>highest Rating:</td>
+                        <td id="highest_rating" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Wins:</td>
+                        <td id="wins" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Battles:</td>
+                        <td id="battles" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div style="text-align: center;">
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <td colspan="2" style="font-weight: bold;">CHECK YOUR CARD COLLECTION</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><button onclick="peakmonsters()">In Peakmonsters</button></td>
+                            <td><button onclick="spl()">In Splinterlands</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

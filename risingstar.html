@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risingstar Data</title>
+
+
+    <link rel="stylesheet" href="src/style.css">    
+    <script src="src/index.js"></script>
+    <script src="src/collection.js"></script>
+
+</head>
+<body>
+
+    <div class="nav-head">
+        <p style="font-weight:bold;">Hive Games Statistics</p>
+        <button type="submit" class="option-button" onclick="logout()"> Log Out</button>
+    </div>
+
+    <div class="container-options">
+        <button class="option-button" onclick="splinterlands()">
+            SPLINTERLANDS
+        </button>
+
+        <button class="option-button" onclick="risingstar()">
+            RISINGSTAR
+        </button>
+    </div>
+
+    <div class="container-panel-bg">
+
+    </div>
+
+    <div class="container-panel">
+        <div id="splinterlands_stats" class="statscontent">
+
+            <div style="display: flex;">
+                <table>
+                    <tr>
+                        <td>Player Name:</td>
+                        <td id="rsg_name" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Level:</td>
+                        <td id="rsg_level" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Missions:</td>
+                        <td id="rsg_missions" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Total Nfts:</td>
+                        <td id="rsg_nfts" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Income Modifier:</td>
+                        <td id="rsg_modifier" style="color:rgb(255, 197, 7);">N/A</td>              
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Mission Ego:</td>
+                        <td id="rsg_ego" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Fans:</td>
+                        <td id="rsg_fans" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Skill:</td>
+                        <td id="rsg_skill" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Lesson Skill:</td>
+                        <td id="rsg_lesson" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Luck:</td>
+                        <td id="rsg_luck" style="color:rgb(255, 197, 7);">N/A</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div style="text-align: center;">
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <td colspan="2" style="font-weight: bold;">CHECK YOUR CARD COLLECTION</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><button onclick="nftmart()">In NFTMart</button></td>
+                            <td><button onclick="rsgfam()">In Rsgfam</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
