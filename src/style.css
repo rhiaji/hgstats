@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    color: #edf0f1;
+}
+
+body {
+    background-image: url(../dungeon_background.png);
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.nav-head {
+    display: flex;
+    margin: 0 10px;
+}
+
+.nav-head button{
+    margin: 10px;
+    margin-left: auto;
+}
+
+
+.container-options {
+    display: block;
+    top: 10%;
+    left: 28%;
+    width: 700px;
+    height: 40px;
+    justify-content: center;
+    align-items:center;
+    position: fixed;
+}
+
+.option-button {
+    height: 80%;
+    border-radius: 5px;
+    background-color: rgb(54, 89, 97);
+}
+
+.option-button:hover {
+    height: 80%;
+    border-radius: 5px;
+    background-color: rgb(33, 106, 122);
+    cursor: pointer;
+    color: rgb(255, 176, 7);
+}
+
+.container-panel-bg {
+    display: block;
+    background: linear-gradient(90deg, rgb(69, 66, 66) 0%, rgb(108, 106, 110) 100%);
+    opacity: 0.95;
+    top: 20%;
+    left: 28%;
+    width: 700px;
+    height: 400px;
+    justify-content: center;
+    align-items:center;
+    position: fixed;
+}
+
+.container-panel {
+    display: block;
+    top: 20%;
+    left: 28%;
+    width: 700px;
+    height: 350px;
+    justify-content: center;
+    align-items:center;
+    position: fixed;
+    font-size: 18px;
+}
+
+
+.container-panel table {
+    width: 50%;
+}
+
+.container-panel table tr td {
+    padding: 10px;
+}
+
+.container-panel button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(54, 89, 97);
+    cursor: pointer;
+}
+
+.container-panel button:hover {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(33, 106, 122);
+    color: rgb(255, 176, 7);
+    cursor: pointer;
+}
+
+/* ============= LOG IN HTML=================== */
+
+.container-login-panel {
+    display: block;
+    top: 20%;
+    left: 28%;
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    font-size: 20px;
+}
+.container-login-panel div{
+  margin-top: 100px;
+}
+
+.container-login-panel button{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(54, 89, 97);
+    cursor: pointer;
+}
+
+.container-login-panel button:hover{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(33, 106, 122);
+    cursor: pointer;
+}
+
+/* ============= LOG IN HTML=================== */
+
+/* ============= GUILD HTML =================== */
+
+.container-panel-bg-guild {
+    display: block;
+    background: linear-gradient(90deg, rgb(69, 66, 66) 0%, rgb(108, 106, 110) 100%);
+    opacity: 0.95;
+    top: 20%;
+    left: 28%;
+    width: 700px;
+    height: 500px;
+    justify-content: center;
+    align-items:center;
+    position: fixed;
+}
+
+.table-container {
+    display: block;
+    top: calc(20% + 100px);
+    left: 28%;
+    width: 700px;
+    height: 400px;
+    justify-content: center;
+    align-items:center;
+    position: fixed;
+    font-size: 20px;
+    overflow-x: auto;
+    overflow-y : scroll;
+    
+}
+
+.guild-table tr:nth-child(even) {
+
+    /* background-color: linear-gradient(90deg, rgb(69, 66, 66) 0%, rgb(108, 106, 110) 100%); */
+    background-color: rgb(69, 66, 66);
+
+}
+
+.guild-table tr:nth-child(odd) {
+
+    background-color: rgb(108, 106, 110);
+
+}
+
+.guild-table td:nth-child(even) {
+
+    color: rgb(29, 210, 255);
+    
+}
+
+.guild-table td:nth-child(odd) {
+
+    color: rgb(0, 255, 157);
+    
+}
+
