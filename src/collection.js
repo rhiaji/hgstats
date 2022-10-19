@@ -26,7 +26,7 @@ function rsgfam(){
 function logout() {
     sessionStorage.removeItem('username')
 
-    document.location.href = "login.html";
+    document.location.href = "index.html";
 }
 
 function guildcheck() {
